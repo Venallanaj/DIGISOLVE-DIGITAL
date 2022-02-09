@@ -36,20 +36,24 @@ body {
 /**Buttons**/
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 200px;
+    display: inline-block;
 }
 
 .btn-full:link,
-.btn-full:visited {
-    background-color: #ed0b7e;
+.btn-full:visited,
+input[type=submit] {
+    background-color: #ed07b7;
     color: #fff;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit]:hover {
     background-color: #bd0592;
 }
 
@@ -319,7 +323,7 @@ blockquote {
 }
 
 blockquote:before {
-    content: "\201C";
+    content: " \201C";
     display: block;
     font-size: 500%;
     position: absolute;
@@ -328,8 +332,8 @@ blockquote:before {
 }
 
 cite {
-    display: block;
     margin-top: 25px;
+    display: block;
     font-size: 90%;
 }
 
@@ -359,7 +363,7 @@ cite img {
     background-color: #fff;
     width: 90%;
     margin-bottom: 30px;
-    box-shadow: 0 3px 2px #efefef;
+    box-shadow: 0 3px 2px #efefefef;
     text-align: left;
 }
 
@@ -394,7 +398,7 @@ cite img {
 
 .small-icon {
     color: #ed07b7;
-    font-size: 120;
+    font-size: 120%;
     display: inline-block;
     margin-right: 10px;
     width: 30px;
@@ -402,12 +406,12 @@ cite img {
 }
 
 .package-box ul li {
-    padding: 5px 0;
     color: #555;
+    padding: 5px 0;
 }
 
 .package-box div {
-    padding: 25px;
+    padding: 15px;
     border-bottom: 1px solid #efefef;
 }
 
